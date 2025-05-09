@@ -27,7 +27,7 @@ Devuélveme solo el producto más adecuado en formato JSON así:
 `;
 
   const chat = await openai.chat.completions.create({
-    model: "gpt-4",
+    model: "gpt-3.5-turbo",  // <- CAMBIADO AQUÍ
     messages: [
       { role: "system", content: "Eres un experto en ventas de una tienda de flores." },
       { role: "user", content: prompt },
@@ -45,5 +45,5 @@ Devuélveme solo el producto más adecuado en formato JSON así:
   }
 }
 
-// Cambia este mensaje por el de tu cliente o visitante real
-getRecommendation("Quiero un arreglo elegante con flores blancas para mi mamá");
+// Cambia este mensaje por el del cliente real
+getRecommendation("Quiero un ramo con flores amarillas y un toque elegante");
