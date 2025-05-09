@@ -12,7 +12,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY // asegúrate de tener esta variable en .env
 });
 
-const products = JSON.parse(fs.readFileSync('./src/products.json', 'utf8'));
+const products = JSON.parse(fs.readFileSync('./products.json', 'utf8'));
 
 app.post('/chat', async (req, res) => {
   const { message } = req.body;
