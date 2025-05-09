@@ -45,5 +45,5 @@ Devuélveme solo el producto más adecuado en formato JSON así:
   }
 }
 
-// Cambia este mensaje de ejemplo por cualquier otro
-getRecommendation("Quiero regalar algo tierno para alguien que ama las flores amarillas");
+// Cambia este mensaje por el de tu cliente o visitante real
+getRecommendation("Quiero un arreglo elegante con flores blancas para mi mamá");
